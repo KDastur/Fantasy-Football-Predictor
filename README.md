@@ -1,11 +1,11 @@
 # Fantasy-Football-Predictor
-A Python-based prediction model that stores, and evaluates player performance by weighting historical averages, consistency, and opponent matchups to estimate future scores.
+### A Python-based prediction model that stores, and evaluates player performance by weighting historical averages, consistency, and opponent matchups to estimate future scores.
 
-##### How To Use: this program starts by 
+How To Use: this program starts by asking the user if they would like to add a player, delete a player, or view all players on his fantasy football team. If the user adds a player, he will be prompted to provide information such as player name, position, their matchup strength for that specific week, their average points per game up to that week, and an subjective rating of the player's consistency. This will then output the predicted score for that player next week, as well as a likely range that the player will fall into, with the upper bound and lower bound being determined by the player's consistency. this stores the player's information and predicted score in a list. it then prompts you to add/delete a player, or view team. deleting a player simply provides a numbered list of all players, and lets the user choose one to delete from the list. finally if the user chooses to view the team, it provides the full list of all the players entered, and allows the user to compare each player's prediction, and range of cores to pick their best team. (Note: after entering real information for 14 players for a week of football, 12/14 players has a score in their predicted range)
 
 ```python
 while True:
-    ans = input("Add player (a), Delete player (d), Compare players (c), or View team (v): ").lower()
+    ans = input("Add player (a), Delete player (d), or View team (v): ").lower()
     if ans == "a":
         b = input("Player first name: ").capitalize()
         c = input("Player last name: ").capitalize()
